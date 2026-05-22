@@ -1,12 +1,30 @@
-# Kenya Money Supply and Private Sector Credit Dashboard
+# Kenya Money Supply & Private Credit Dashboard
 
-## Project Overview
+**Analyzing monetary transmission in Kenya: Is M3 growth reaching the real economy?**
 
-This Power BI project analyzes Kenya’s money supply and private sector credit trends from **January 2025 to February 2026** using data from the **Central Bank of Kenya Monthly Economic Indicators**.
+*Period: Jan 2025 – Feb 2026 | Source: Central Bank of Kenya Monthly Economic Indicators*
 
-The dashboard investigates whether Kenya’s growth in broad money supply is translating into private sector credit growth, which sectors receive the most credit, and whether cash movement is more volatile than bank lending.
+---
 
-This project was built as a business intelligence and data analytics portfolio project.
+## The Story Behind This
+
+I started with a simple expectation:
+
+If Kenya’s money supply was growing, private sector credit would probably grow at almost the same pace.
+
+That is the basic idea behind monetary transmission. When liquidity expands in the financial system, we usually expect some of that money to flow into lending for businesses, households, and productive sectors.
+
+But the data showed something different.
+
+Between **January 2025 and February 2026**, Kenya’s **Money Supply M3 grew by 12.06%**.
+
+Private sector credit grew by **7.17%**.
+
+That gap became the story.
+
+I built this Power BI dashboard using **Central Bank of Kenya Monthly Economic Indicators** to track whether liquidity growth is translating into lending, where private sector credit is actually going, and whether the banking system stays stable when cash movement becomes volatile.
+
+This is a business intelligence project focused on turning official central bank data into a clear, decision-ready dashboard.
 
 ---
 
@@ -36,52 +54,141 @@ This project was built as a business intelligence and data analytics portfolio p
 
 ## Main Business Question
 
-**Is Kenya’s growth in money supply translating into stronger private sector credit between January 2025 and February 2026?**
+**Is Kenya’s growth in money supply translating into stronger private sector credit?**
+
+The dashboard answers this question by tracking:
+
+- Money Supply M3
+- Private Sector Credit
+- Demand Deposits
+- Currency Outside Banks
+- Month-on-month cash movement
+- Month-on-month private credit movement
+- Sector-level private credit allocation
+
+---
+
+## Who This Helps
+
+### Policy Researchers
+
+Policy researchers can use this dashboard to quickly identify whether liquidity growth is reaching the real economy through private sector lending.
+
+The dashboard highlights a possible **credit transmission gap**: Money Supply M3 grew faster than private sector credit.
+
+This does not prove why the gap exists, but it creates a strong starting point for deeper analysis using interest rates, government borrowing, bank reserves, inflation, and government securities data.
+
+---
+
+### Investors and Fund Managers
+
+Investors can use the sector credit analysis to see where lending is concentrated.
+
+For example, the dashboard shows that **Trade received KSh 732.5B** in private sector credit in February 2026, while **Agriculture received only 4.70%** of total private sector credit.
+
+This helps investors ask better questions:
+
+- Which sectors are attracting credit?
+- Which sectors may be underfunded?
+- Is credit flowing more toward commerce, households, production, or assets?
+- Are some sectors becoming more financially exposed than others?
+
+---
+
+### Bank Treasurers and Risk Analysts
+
+Bank treasurers and risk analysts can use the dashboard to compare cash volatility with lending stability.
+
+Cash outside banks moved sharply from **+4.85% in October 2025** to **-4.67% in January 2026**.
+
+However, private sector credit declined by only **-0.78%** in January 2026.
+
+This suggests that private sector credit was more stable than short-term cash movement during the period.
+
+---
+
+## What You’ll Find Inside
+
+| Page | What It Shows | Key Takeaway |
+|---|---|---|
+| **Executive Summary** | KPI cards, sector ranking, and written insights | Money supply grew faster than private sector credit |
+| **Overview** | 14-month trends for M3, private credit, deposits, and cash | M3 increased steadily, but credit grew more slowly |
+| **Sector Credit Analysis** | Private sector credit ranking for Feb 2026 | Trade received the most credit |
+| **Sector Credit Trends** | Top 5 sector credit movement over time | Trade remained the dominant credit recipient |
+| **Monthly Change Analysis** | Cash MoM change vs private credit MoM change | Cash was more volatile than private sector credit |
 
 ---
 
 ## Key Questions Answered
 
-### 1. Macro Health Check
+### 1. Kenya Money Supply M3 Analysis
 
 - Is Kenya’s broad money supply growing, shrinking, or stagnant?
-- Is money supply growth translating into actual loans to businesses and households?
-- Is private sector credit growing at the same pace as money supply?
-- Is there a possible gap between liquidity growth and credit growth?
+- Is Money Supply M3 growing faster than private sector credit?
+- What does the growth gap suggest about liquidity transmission?
 
-### 2. Money Composition
+---
 
-- Is the money movement coming from cash outside banks or bank deposits?
-- How large is currency outside banks compared to total money supply?
+### 2. Kenya Private Sector Credit Data
+
+- Is private sector credit growing?
+- Which sectors receive the most private sector credit?
+- Which sectors receive the least private sector credit?
+- Is credit concentrated in a few sectors?
+
+---
+
+### 3. Money Composition
+
+- Is money growth coming from cash outside banks or demand deposits?
+- How large is currency outside banks compared to Money Supply M3?
 - Are cash movements stable or volatile?
-- Do demand deposits show stronger growth than physical cash?
 
-### 3. Sector Credit Allocation
-
-- Which economic sectors receive the most private sector credit?
-- Which sectors receive the least credit?
-- Is credit concentrated in a few sectors or spread evenly across the economy?
-- How much credit goes to agriculture compared to sectors like trade, households, manufacturing, and real estate?
+---
 
 ### 4. Credit Stability and Volatility
 
 - Which is more volatile: cash outside banks or private sector credit?
-- Did the sharp cash decline in January 2026 lead to a major decline in private sector credit?
-- Does private sector credit remain stable even when cash outside banks changes sharply?
+- Did the sharp cash decline in January 2026 lead to a major decline in private credit?
+- Is lending more stable than short-term cash movement?
 
-### 5. Decision-Making Insight
+---
 
-- What does the gap between money supply growth and private sector credit growth suggest?
-- Which sectors may require closer policy or investment attention?
-- What should banks, investors, and policymakers monitor?
+## The Numbers That Matter
+
+1. **Transmission Gap**  
+   Money Supply M3 grew by **12.06%**, while private sector credit grew by **7.17%**.  
+   Liquidity expanded faster than lending.
+
+2. **Sector Concentration**  
+   Trade received **KSh 732.5B** in private sector credit in February 2026.  
+   Agriculture received **4.70%** of total private sector credit.
+
+3. **System Resilience**  
+   Cash outside banks declined by **-4.67%** in January 2026.  
+   Private sector credit declined by only **-0.78%** in the same month.
+
+4. **Cash Volatility**  
+   Cash outside banks showed a Q4 spike in this dataset and corrected in Q1.  
+   More historical data would be needed to confirm whether this is a consistent seasonal pattern.
 
 ---
 
 ## Time Period Covered
 
-**January 2025 – February 2026**
+The dashboard covers:
 
-For month-on-month change analysis, the period starts from **February 2025** because month-on-month change requires a previous month for comparison.
+```text
+January 2025 – February 2026
+```
+
+For month-on-month change analysis, the period starts from:
+
+```text
+February 2025 – February 2026
+```
+
+This is because month-on-month change requires a previous month for comparison.
 
 ---
 
@@ -91,12 +198,12 @@ The data was sourced from:
 
 **Central Bank of Kenya — Monthly Economic Indicators**
 
-Files used:
+Source files used:
 
 - Monthly Economic Indicators — January 2026
 - Monthly Economic Indicators — February 2026
 
-The project uses selected indicators from the CBK money, credit, and interest rate tables.
+The project uses selected indicators from CBK money, credit, and interest rate tables.
 
 ---
 
@@ -135,7 +242,7 @@ It includes:
 
 Main insight:
 
-> Money supply grew faster than private sector credit, suggesting that liquidity expanded faster than lending to the private sector.
+> Money Supply M3 grew faster than private sector credit, suggesting that liquidity expanded faster than lending to the private sector.
 
 ---
 
@@ -214,37 +321,7 @@ Main insight:
 
 ---
 
-## Key Findings
-
-1. **Money Supply M3 increased by 12.06%** between January 2025 and February 2026.
-
-2. **Private sector credit increased by 7.17%** over the same period.
-
-3. **Money supply grew faster than private sector credit**, suggesting a possible credit transmission gap.
-
-4. **Trade was the largest private sector credit recipient** in February 2026.
-
-5. **Agriculture received only 4.70% of private sector credit**, despite its importance to Kenya’s economy.
-
-6. **Cash outside banks was more volatile than private sector credit**, with the strongest increase occurring in October 2025 and the sharpest decline occurring in January 2026.
-
-7. **Private sector credit remained relatively stable**, even when cash outside banks declined sharply.
-
----
-
-## Tools Used
-
-| Tool | Purpose |
-|---|---|
-| Microsoft Excel / LibreOffice Calc | Data cleaning and table preparation |
-| Power BI Desktop | Dashboard creation and visualization |
-| Power Query | Data transformation |
-| DAX | Measures and calculated insights |
-| GitHub | Project documentation and portfolio hosting |
-
----
-
-## Data Preparation Process
+## Data and Method
 
 The original CBK data was arranged in a wide spreadsheet format:
 
@@ -367,54 +444,25 @@ These measures help summarize:
 
 ---
 
-## Skills Demonstrated
+## Quick Start
 
-This project demonstrates the following data analytics skills:
+Clone the repository:
 
-- Data cleaning
-- Data transformation
-- Power BI dashboard design
-- Power Query usage
-- DAX measure creation
-- Time-series analysis
-- Sector-level credit analysis
-- Business intelligence storytelling
-- Economic data interpretation
-- Executive summary reporting
-- Dashboard documentation using GitHub
+```bash
+git clone https://github.com/MastaT002/kenya-money-supply-private-credit-dashboard.git
+```
 
----
+Open the Power BI dashboard file:
 
-## Limitations
+```text
+powerbi/CBK_Money_Supply_Private_Credit_Trends.pbix
+```
 
-This dashboard is based on selected CBK Monthly Economic Indicators from January 2025 to February 2026.
+Then open it in **Power BI Desktop**.
 
-Some questions require additional data before making strong policy conclusions.
+No database connection is required because the data is already embedded in the Power BI file.
 
-For example:
-
-- To understand where excess liquidity is going, more data on government securities, bank reserves, and government borrowing would be needed.
-- To determine whether cash spikes are seasonal or unusual, more years of monthly cash data would be needed.
-- To recommend interest rate policy, additional data on inflation, lending rates, Treasury bill rates, exchange rates, non-performing loans, and GDP growth would be required.
-- To classify credit as productive or consumption-based, a sector grouping model would be needed.
-
-Therefore, this dashboard should be interpreted as an exploratory business intelligence analysis, not a full macroeconomic policy model.
-
----
-
-## Recommended Decision-Maker Actions
-
-Based on the dashboard, decision-makers may consider:
-
-1. Monitoring whether money supply growth continues to translate into private sector credit growth.
-
-2. Investigating why private sector credit grew more slowly than broad money supply.
-
-3. Reviewing credit allocation to agriculture and other productive sectors.
-
-4. Tracking household and consumer-related credit growth to identify possible risk areas.
-
-5. Comparing private sector credit growth with interest rates, government borrowing, and inflation before making policy decisions.
+If Power BI Desktop is not installed, browse the `/screenshots/` folder for static dashboard previews.
 
 ---
 
@@ -422,27 +470,44 @@ Based on the dashboard, decision-makers may consider:
 
 ```text
 kenya-money-supply-private-credit-dashboard/
-│
-├── data/
-│   └── CBK_Money_Supply_Private_Credit_Trends.xlsx
-│
-├── powerbi/
-│   └── CBK_Money_Supply_Private_Credit_Trends.pbix
-│
-├── screenshots/
-│   ├── executive_summary.jpg
-│   ├── overview.jpg
-│   ├── sector_credit_analysis.jpg
-│   ├── sector_credit_trends.jpg
-│   └── monthly_change_analysis.jpg
-│
-├── docs/
-│   ├── CBK Monthly Economic Indicators Jan 2026.pdf
-│   └── CBK Monthly Economic Indicators Feb 2026.pdf
-│
+├── data/           # Cleaned Excel dataset
+├── powerbi/        # .pbix dashboard file
+├── screenshots/    # Page-by-page previews
+├── docs/           # Original CBK source PDFs
 ├── LICENSE
 └── README.md
 ```
+
+---
+
+## Limitations
+
+This is an exploratory business intelligence analysis, not a full macroeconomic model.
+
+To answer **“why is credit lagging M3?”** fully, additional data would be needed, including:
+
+- CBK interest rate decisions over the period
+- Government securities uptake
+- Treasury bill rates
+- Commercial bank lending rates
+- Inflation and exchange rate data
+- Non-performing loan ratios by sector
+
+To determine whether December/January cash swings are seasonal or abnormal, more historical data would be needed.
+
+To classify credit as productive or consumption-based, a formal sector grouping model would be needed.
+
+This dashboard flags the questions. Deeper answers require deeper data.
+
+---
+
+## What’s Next
+
+| Phase | Focus | Data Needed |
+|---|---|---|
+| Phase 2: Transmission Analysis | Where does excess liquidity go? | Government securities, T-bill rates, lending rates, inflation |
+| Phase 3: Sector Grouping | Productive vs consumption credit | Sector classification model |
+| Phase 4: Forecasting | Early warning signals | Multi-year historical data, trend forecasting |
 
 ---
 
@@ -459,45 +524,24 @@ kenya-money-supply-private-credit-dashboard/
 
 ---
 
-## How to View the Project
+## Skills Demonstrated
 
-To view the dashboard:
+This project demonstrates:
 
-1. Download or clone this repository.
-2. Open the `.pbix` file in **Power BI Desktop**.
-3. Navigate through the dashboard pages:
-   - Executive Summary
-   - Overview
-   - Sector Credit Analysis
-   - Sector Credit Trends
-   - Monthly Change Analysis
-
-If Power BI Desktop is not installed, the screenshots in the `screenshots/` folder provide a visual preview of each page.
-
----
-
-## Future Improvements
-
-Future improvements may include:
-
-- Adding more historical years
-- Adding interest rate data
-- Adding inflation data
-- Adding government borrowing data
-- Adding non-performing loan data
-- Creating sector groups such as productive, consumption, property, and financial sectors
-- Publishing the dashboard to Power BI Service
-- Adding a Power BI public portfolio link
+- Data cleaning
+- Data transformation
+- Power BI dashboard design
+- Power Query usage
+- DAX measure creation
+- Time-series analysis
+- Sector-level credit analysis
+- Business intelligence storytelling
+- Economic data interpretation
+- Executive summary reporting
+- Dashboard documentation using GitHub
 
 ---
-
-## Project Status
-
-Completed.
-
----
-
-## Author
+## About
 
 **Trevor Mulundi (MastaT)**
 
@@ -507,6 +551,6 @@ Data Analytics and Business Intelligence Portfolio Project
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License — see `LICENSE` for details.
 
-The dashboard and documentation are shared for learning and portfolio purposes. The original data remains credited to the Central Bank of Kenya.
+Original data credited to the Central Bank of Kenya. Used for analytical and educational purposes.
